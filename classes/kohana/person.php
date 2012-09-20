@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Big Yellow
  *
@@ -55,7 +56,6 @@ class Kohana_Person
      * array $_ locations for a person
      */
     private $_locations;
-
 
 
     /**
@@ -132,10 +132,6 @@ class Kohana_Person
 
         return $this;
     }
-
-
-
-
 
     /**
      * Get Tags

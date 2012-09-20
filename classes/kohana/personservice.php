@@ -339,6 +339,7 @@ class Kohana_PersonService extends Kohana_Batchbookbase
         $response = $httpClient->request(Zend_Http_Client::PUT);
         if (200 != $response->getStatus()) {
             //TODO: throw more specific exception
+            //echo '<pre>'; print_r($response); die();
             throw new Exception('Person not updated.');
         }
 
@@ -456,7 +457,5 @@ class Kohana_PersonService extends Kohana_Batchbookbase
             throw new Exception('Tag not added to person with id=' . $person->getId() );
         } 
     }
-
-
 
 }
